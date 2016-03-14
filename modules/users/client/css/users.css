@@ -34,3 +34,49 @@
   min-height: 150px;
   max-height: 150px;
 }
+/*Alice*/
+
+section {
+  background: lightgrey;
+
+}
+
+section #authen{
+  padding:20px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+
+}
+.container #signin, #authen {
+  background: white;
+}
+
+.container #authen {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.container #signin {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.signbar {
+  width: 100%;
+  background: cadetblue;
+  margin-left: 0;
+}
+
+fieldset {
+  width: 100%;
+}
+
+button#signinbtn {
+  margin-top: 10px;
+}
