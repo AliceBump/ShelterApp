@@ -1,4 +1,4 @@
-<div class="container" ng-controller="HeaderController">
+<div class="container navcontainer" ng-controller="HeaderController">
   <div class="navbar-header">
     <button class="navbar-toggle" type="button" ng-click="toggleCollapsibleMenu()">
       <span class="sr-only">Toggle navigation</span>
@@ -20,10 +20,16 @@
         <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
       </li>
     </ul>
+    <!--<ul class="nav navbar-nav">-->
+      <!--<li ui-sref-active="active">-->
+        <!--<a ui-sref="searchpg">Search Sitters</a>-->
+      <!--</li>-->
+    <!--</ul>-->
     <ul class="nav navbar-nav navbar-right" ng-hide="authentication.user">
       <li ui-sref-active="active">
         <a ui-sref="authentication.signup">Sign Up</a>
       </li>
+
       <li class="divider-vertical"></li>
       <li ui-sref-active="active">
         <a ui-sref="authentication.signin">Sign In</a>

@@ -6,8 +6,8 @@ module.exports = {
       css: [
         // bower:css
         'public/lib/bootstrap/dist/css/bootstrap.css',
-        'public/lib/bootstrap/dist/css/bootstrap-theme.css'
-        // endbower
+        'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+        'public/lib/fontawesome/css/font-awesome.min.css'// endbower
       ],
       js: [
         // bower:js

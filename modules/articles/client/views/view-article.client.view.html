@@ -1,0 +1,53 @@
+<!--<section ng-controller="ArticlesController" ng-init="findOne()">-->
+  <!--<div class="page-header">-->
+    <!--<h1 ng-bind="article.title"></h1>-->
+  <!--</div>-->
+  <!--<div class="pull-right" ng-show="authentication.user._id == article.user._id">-->
+    <!--<a class="btn btn-primary" ui-sref="articles.edit({articleId: article._id})">-->
+      <!--<i class="glyphicon glyphicon-edit"></i>-->
+    <!--</a>-->
+    <!--<a class="btn btn-primary" ng-click="remove();">-->
+      <!--<i class="glyphicon glyphicon-trash"></i>-->
+    <!--</a>-->
+  <!--</div>-->
+  <!--<small>-->
+    <!--<em class="text-muted">-->
+      <!--Posted on-->
+      <!--<span ng-bind="article.created | date:'mediumDate'"></span>-->
+      <!--by-->
+      <!--<span ng-bind="article.user.displayName"></span>-->
+    <!--</em>-->
+  <!--</small>-->
+  <!--<p class="lead" ng-bind="article.content"></p>-->
+<!--</section>-->
+
+
+<article ng-controller="ArticlesController" ng-init="findOne()"class="post">
+  <header>
+    <h3><a ui-sref="articles.view({articleId: article._id})"  ng-bind="article.title"></a></h3>
+    <div class="post-details">
+      <i class="fa fa-user"></i><span ng-bind="article.user.displayName"></span>
+      <i class="fa fa-clock-o"></i> <time><span ng-bind="article.created | date:'mediumDate'"></span></time>
+      <!--<i class="fa fa-folder"></i> <a href="">Tutorials</a>, <a href="">Coding</a>-->
+      <!--<i class="fa fa-tags"></i> Tagged <a href="">wordpress</a>, <a href="">premium</a>, <a href="">another tag</a>, <a href="">yadda yadaa</a>-->
+
+      <div class="post-comments-badge">
+        <a href=""><i class="fa fa-comments"></i> 168</a>
+      </div><!-- post-comments-badge -->
+    </div><!-- post-details -->
+  </header>
+  <!--<div class="post-image">-->
+  <!--<img src="assets/img/hero-bg.jpg">-->
+  <!--</div>&lt;!&ndash; post-image &ndash;&gt;-->
+  <div class="post-excerpt">
+    <p class="list-group-item-text" ng-bind="article.content"></p>
+  </div><!-- post-excerpt -->
+  <div class="pull-right" id="white" ng-show="authentication.user._id == article.user._id">
+    <a class="btn btn-primary" ui-sref="articles.edit({articleId: article._id})">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" ng-click="remove();">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+</article><!-- post -->

@@ -1,84 +1,326 @@
-<section ng-controller="HomeController">
-  <div class="jumbotron text-center">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-        <img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/client/img/brand/logo.png" />
+<div class="content-box clearfix">
+
+  <!--<section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">-->
+  <!--<h1 class="page-title">Blog</h1>-->
+  <!--</section>-->
+  <section class="feature-image feature-image-default-alt" data-type="background" data-speed="5">
+    <article>
+      <div class="clearfix">
+
+        <div class="col-sm-6 col-sm-offset-3 hero-text">
+          <h1>Happy dog, our proud.</h1>
+          <p class="lead">Now sign up for a $10 off </p>
+          <p><a class="btn btn-lg btn-danger" ui-sref="authentication.signup" role="button">Sign up now &raquo;</a></p>
+        </div>
+        <!-- col -->
+
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </article>
+  </section>
+  <section ng-controller="HomeController" class="greyband">
+    <div class="container-fluid">
+      <div class="row" id="formsection">
+        <h1 class="text-center">Find your sitters now.</h1>
+        <div class="col-sm-10 col-sm-offset-1" id="searchsection">
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">Service Type</span>
+              <select name="serviceType" id="serviceType" ng-model="sitter.serviceType" class="form-control">
+                <option value="Dog Boarding">Dog Boarding</option>
+                <option value="House Sitting">House Sitting</option>
+                <option value="Dog Walking">Dog Walking</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="input-group">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location"ng-model="sitter.location" class="form-control">
+              </input>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="input-group">
+              <label for="startDate">Start Date</label>
+              <input type="date" id="startDate" name="startDate"ng-model="sitter.startDate" class="form-control">
+              </input>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="input-group">
+              <label for="endDate">End Date</label>
+              <input type="date" id="endDate" name="endDate"ng-model="sitter.endDate" class="form-control">
+              </input>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class=""input-group-addon">Dog Size</span>
+              <select name="dogSize" id="dogSize" ng-model="sitter.dogSize" class="form-control">
+                <option value="small">Small 0-15lbs</option>
+                <option value="medium">Medium 16-40lbs</option>
+                <option value="large">Large 41+lbs</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class=""input-group-addon">Dog Number</span>
+              <select name="dogNumber" id="dogNumber" ng-model="sitter.dogNumber" class="form-control">
+                <option value="1">One Dog</option>
+                <option value="2">Two Dogs</option>
+                <option value="3">Three+ Dogs</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
+            <div class="form-group">
+              <button  type="submit" ng-disabled="addEventForm.$invalid" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-primary">Reset</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
-    <div class="row">
-      <p class="lead">
-        Open-Source Full-Stack Solution For MEAN Applications
+  </section>
+  <section class="whiteband">
+    <div class="container ">
+      <h1 class="text-center">
+        Find dog lovers around you,also kind sitters.
+      </h1>
+      <p class="text-center">
+        Bark dogs enjoy loving, local stays.
       </p>
+      <div class="row row-centered" id="sitterexample">
+        <div class="col-sm-2 col-centered sittersexample">
+          <img src="/modules/core/client/img/dog1.jpg" class="img-responsive center-block"alt="dog1.jpg"  width="200" height="200">
+          <figcaption class="text-center">Chad is stayed with Marry.</figcaption>
+        </div>
+        <div class="col-sm-2 col-centered sittersexample">
+          <img src="/modules/core/client/img/dog2.jpg" class="img-responsive center-block" alt="dog2.jpg"  width="200" height="200">
+          <figcaption class="text-center">Chad is stayed with Marry.</figcaption>
+        </div>
+        <div class="col-sm-2 col-centered sittersexample">
+          <img src="/modules/core/client/img/dog3.jpg" class="img-responsive center-block" alt="dog3.jpg"  width="200" height="200">
+          <figcaption class="text-center">Chad is stayed with Marry.</figcaption>
+        </div>
+        <div class="col-sm-2 col-centered sittersexample">
+          <img src="/modules/core/client/img/dog4.jpg" class="img-responsive center-block" alt="dog4.jpg"  width="200" height="200">
+          <figcaption class="text-center">Chad is stayed with Marry.</figcaption>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="greyband">
+    <h1 class="text-center">
+      Barkers will treat your dog as family..
+    </h1>
+    <div class="row row-centered" id="sitterwordexample">
+      <div class="col-sm-5 col-centered clearfix sitterwords">
+        <img src="/modules/core/client/img/sitters/sitter1.jpg" alt="sitter1.jpg" width="100" height="100">
+        <div class="figcap">
+          <figcaption>Tanner was cared for like a dear family member, and we felt that he was safe and secure. We received pictures and daily updates, which was extremely comforting.</figcaption>
+        </div>
+      </div>
+      <div class="col-sm-5 col-centered clearfix sitterwords">
+        <img src="/modules/core/client/img/sitters/sitter2.jpg" alt="sitter2.jpg"  width="100" height="100">
+        <div class="figcap">
+          <figcaption>Rachel was extremely professional, accommodating and thoughtful to both us and the dogs--one of which is diabetic and requires multiple shots of insulin daily.</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="whiteband">
+    <h1 class="text-center">
+      How does Bark work?
+    </h1>
+    <p class="text-center">
+      Only 3 steps to do.
+    </p>
+
     <div class="row">
-      <p>
-        <a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>
-      </p>
+      <div class="col-sm-4">
+        <img src="assets/img/icon-design.png" alt="Design">
+        <h3>Sexy &amp; Modern Design</h3>
+        <p>You get to work with a modern, professional quality design &amp; layout.</p>
+      </div><!-- col -->
+      <div class="col-sm-4">
+        <img src="assets/img/icon-code.png" alt="Code">
+        <h3>Quality HTML5 &amp; CSS3</h3>
+        <p>You'll learn how hand-craft a stunning website with valid, semantic and beautiful HTML5 &amp; CSS3.</p>
+      </div><!-- col -->
+      <div class="col-sm-4">
+        <img src="assets/img/icon-cms.png" alt="CMS">
+        <h3>Easy-to-use CMS</h3>
+        <p>Allow your clients to easily update their websites by converting your static websites to dynamic websites, using WordPress.</p>
+      </div><!-- col -->
+
+    </div>
+
+    <div class="row row-centered text-center" id="steps">
+      <div class="col-sm-3 col-centered">
+        <div class="circletitle clearfix">
+          <div class="circle" id="first"><i class="fa fa-search fa-lg"></i></div><h1>Search</h1>
+
+        </div>
+        <p>Browse loving, trusted dog sitters near you.</p>
+      </div>
+      <div class="col-sm-3 col-centered">
+        <div class="circletitle clearfix">
+          <div class="circle" id="second"><i class="fa fa-calendar fa-lg"></i></div><h1>Book</h1>
+
+        </div>
+        <p>Get to know your sitter and book a stay at their house or yours.</p>
+      </div>
+      <div class="col-sm-3 col-centered">
+        <div class="circletitle clearfix">
+          <div class="circle" id="last"><i class="fa fa-gift fa-lg"></i></div><h1>Relax</h1>
+
+        </div>
+        <p>Enjoy text and photo updates and relax.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer id="footer" >
+  <!--class="navbar navbar-inverse navbar-fixed-bottom"-->
+  <div>
+    <div class="footer-box">
+      <p>Learn More</p>
+
+      <ul class="un-order-list">
+        <li><a href=" ">Read Our Blog</a></li>
+        <li><a href=" ">Rover Q&amp;A</a></li>
+        <li><a href=" ">Community</a></li>
+        <li><a href=" ">Rover Store</a></li>
+        <li><a href=" ">Premium Insurance</a></li>
+        <li><a href=" ">Safety</a></li>
+        <li><a href=" ">Sit a Dog, Save a Life</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <p>Need Help?</p>
+      <a href="" title="">Help Center</a>
+    </div>
+    <div class="footer-box">
+      <p >About Rover</p>
+      <ul class="un-order-list">
+        <li><a href=" ">About Us</a></li>
+        <li><a href=" ">Get the app</a></li>
+        <li><a href=" ">In the Press</a></li>
+        <li><a href=" ">RoverCam</a></li>
+        <li><a href=" ">Jobs</a></li>
+        <li><a href=" ">Partners</a></li>
+        <li><a href=" ">Privacy Policy</a></li>
+        <li><a href=" ">Terms of Service</a></li>
+      </ul>
     </div>
   </div>
-  <div>
-    <h2>Congrats! You've configured and run the sample application.</h2>
-    <p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>
-    <p>This sample application tracks users and articles.</p>
-    <ul>
-      <li>
-        Click
-        <em>Sign Up</em> to get started.
-      </li>
-      <li>
-        Configure your app to work with your social accounts, by editing the
-        <em>/config/env/*.js</em> files.
-      </li>
-      <li>
-        Edit your users module.
-      </li>
-      <li>
-        Add new CRUD modules.
-      </li>
-      <li>
-        Have fun...
-      </li>
+
+  <div class="footer-box">
+    <p>Top Rover Cities</p>
+    <ul class="un-order-list">
+      <!-- need more cities to be displayed here-->
+      <li><a href=" ">Amherst</a></li>
+      <li><a href=" ">Boston</a></li>
+      <li><a href=" ">Chicago</a></li>
+      <li><a href=" ">Detroit</a></li>
+      <li><a href=" ">San Jose</a></li>
     </ul>
   </div>
-  <div class="row">
-    <div class="col-md-3">
-      <h2><strong>M</strong>ongoDB</h2>
-      <p><a target="_blank" href="http://mongodb.org/">MongoDB</a> is a NoSQL database. MongoDB's <a target="_blank" href="http://docs.mongodb.org/manual/">great manual</a> is the place to get started with NoSQL and MongoDB.</p>
-    </div>
-    <div class="col-md-3">
-      <h2><strong>E</strong>xpress</h2>
-      <p><a target="_blank" href="http://expressjs.com/"> Express</a> is a NodeJS server-side application web framework. Check out <a target="_blank" href="http://expressjs.com/4x/api.html">The ExpressJS API reference for more information</a> or <a target="_blank" href="http://stackoverflow.com/questions/8144214/learning-express-for-node-js">StackOverflow</a> for more info.</p>
-    </div>
-    <div class="col-md-3">
-      <h2><strong>A</strong>ngularJS</h2>
-      <p><a target="_blank" href="http://angularjs.org/">AngularJS</a> is client-side web application framework. The <a target="_blank" href="http://www.thinkster.io/">Thinkster Popular Guide</a> and <a target="_blank" href="https://egghead.io/">Egghead Videos</a> are great resources.</p>
-    </div>
-    <div class="col-md-3">
-      <h2><strong>N</strong>ode.js</h2>
-      <p><a target="_blank" href="http://nodejs.org/">Node.js</a> is a JavaScript run-time, popular for being a web server platform. Node's website and this <a target="_blank" href="http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js">stackOverflow thread</a> offer excellent starting points to get to grasps with node.</p>
-    </div>
-  </div>
-  <div class="well">
-    <h2>MEAN.JS Documentation</h2>
-    <p>
-      Once you're familiar with the foundation technology, check out the MEAN.JS Documentation:
-      <ul>
-        <li><a target="_blank" href="http://meanjs.org/docs.html">MEAN.JS Documentation</a>
-        </li>
-        <!-- <li><a target="_blank" href="http://meanjs.org/generator.html">Yeoman Generator</a>
-				</li> -->
-        <li><a target="_blank" href="http://meanjs.org/modules.html">Modules</a>
-        </li>
-        <li><a target="_blank" href="http://meanjs.org/changelog.html">Changelog</a>
-        </li>
-        <li><a target="_blank" href="http://meanjs.org/community.html">Community</a>
-        </li>
-        <li><a target="_blank" href="http://blog.meanjs.org">Blog</a>
-        </li>
-      </ul>
-    </p>
-  </div>
-  <br>Enjoy &amp; Keep Us Updated,
-  <br>The MEAN.JS Team.
-</section>
+
+</footer>
+<!--<section ng-controller="HomeController">-->
+  <!--<div class="jumbotron text-center">-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">-->
+        <!--<img alt="MEAN.JS" class="img-responsive text-center" src="modules/core/client/img/brand/logo.png" />-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<br>-->
+    <!--<div class="row">-->
+      <!--<p class="lead">-->
+        <!--Open-Source Full-Stack Solution For MEAN Applications-->
+      <!--</p>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<p>-->
+        <!--<a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>-->
+      <!--</p>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div>-->
+    <!--<h2>Congrats! You've configured and run the sample application.</h2>-->
+    <!--<p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>-->
+    <!--<p>This sample application tracks users and articles.</p>-->
+    <!--<ul>-->
+      <!--<li>-->
+        <!--Click-->
+        <!--<em>Sign Up</em> to get started.-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--Configure your app to work with your social accounts, by editing the-->
+        <!--<em>/config/env/*.js</em> files.-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--Edit your users module.-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--Add new CRUD modules.-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--Have fun...-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-3">-->
+      <!--<h2><strong>M</strong>ongoDB</h2>-->
+      <!--<p><a target="_blank" href="http://mongodb.org/">MongoDB</a> is a NoSQL database. MongoDB's <a target="_blank" href="http://docs.mongodb.org/manual/">great manual</a> is the place to get started with NoSQL and MongoDB.</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-3">-->
+      <!--<h2><strong>E</strong>xpress</h2>-->
+      <!--<p><a target="_blank" href="http://expressjs.com/"> Express</a> is a NodeJS server-side application web framework. Check out <a target="_blank" href="http://expressjs.com/4x/api.html">The ExpressJS API reference for more information</a> or <a target="_blank" href="http://stackoverflow.com/questions/8144214/learning-express-for-node-js">StackOverflow</a> for more info.</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-3">-->
+      <!--<h2><strong>A</strong>ngularJS</h2>-->
+      <!--<p><a target="_blank" href="http://angularjs.org/">AngularJS</a> is client-side web application framework. The <a target="_blank" href="http://www.thinkster.io/">Thinkster Popular Guide</a> and <a target="_blank" href="https://egghead.io/">Egghead Videos</a> are great resources.</p>-->
+    <!--</div>-->
+    <!--<div class="col-md-3">-->
+      <!--<h2><strong>N</strong>ode.js</h2>-->
+      <!--<p><a target="_blank" href="http://nodejs.org/">Node.js</a> is a JavaScript run-time, popular for being a web server platform. Node's website and this <a target="_blank" href="http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js">stackOverflow thread</a> offer excellent starting points to get to grasps with node.</p>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="well">-->
+    <!--<h2>MEAN.JS Documentation</h2>-->
+    <!--<p>-->
+      <!--Once you're familiar with the foundation technology, check out the MEAN.JS Documentation:-->
+      <!--<ul>-->
+        <!--<li><a target="_blank" href="http://meanjs.org/docs.html">MEAN.JS Documentation</a>-->
+        <!--</li>-->
+        <!--&lt;!&ndash; <li><a target="_blank" href="http://meanjs.org/generator.html">Yeoman Generator</a>-->
+				<!--</li> &ndash;&gt;-->
+        <!--<li><a target="_blank" href="http://meanjs.org/modules.html">Modules</a>-->
+        <!--</li>-->
+        <!--<li><a target="_blank" href="http://meanjs.org/changelog.html">Changelog</a>-->
+        <!--</li>-->
+        <!--<li><a target="_blank" href="http://meanjs.org/community.html">Community</a>-->
+        <!--</li>-->
+        <!--<li><a target="_blank" href="http://blog.meanjs.org">Blog</a>-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</p>-->
+  <!--</div>-->
+  <!--<br>Enjoy &amp; Keep Us Updated,-->
+  <!--<br>The MEAN.JS Team.-->
+<!--</section>-->

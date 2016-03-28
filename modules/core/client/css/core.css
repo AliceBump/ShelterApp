@@ -1,3 +1,98 @@
+/*body {*/
+  /*font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;*/
+/*}*/
+body {
+  /*margin-top: 50px;*/
+  font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1,h2 {
+  margin: 0 0 40px;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+a:link, a:visited {
+  color: #dd5638;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #c9302c;
+}
+
+
+button, input, .btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: white;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-success {
+  background: #79b044;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #6a9b3d;
+  border-color: #6a9b3d;
+}
+
+.btn-danger {
+  background-color: #dd5638;
+  border-color: #d95131;
+}
+
+.text-danger, li.text-danger a {
+  color: #dd5638;
+}
+
+a.text-danger:hover {
+  color: #e55939;
+}
+
+
+
+
+
+
+/**/
+
+/**/
 .content {
   margin-top: 50px;
 }
@@ -26,12 +121,6 @@ a:hover .header-profile-image {
   padding-top: 11px !important;
   padding-bottom: 11px !important;
 }
-.user-primary-account {
-  font-size: 30px;
-  top: 10px;
-  right: 10px;
-  position: absolute;
-}
 .error-text {
   display: none;
 }
@@ -40,4 +129,265 @@ a:hover .header-profile-image {
 }
 .has-error .help-inline.error-text {
   display: inline;
+}
+.thumnailimg {
+  float: left;
+  margin: -20px 10px 40px 0;
+  width:200px;
+  height:200px;
+}
+.sitterinfo {
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="date"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 12px;
+}
+input[type="submit"],
+button[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: none;
+  border-radius: 6px;
+}
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  outline: none;
+  border: none;
+  background: #aaa;
+}
+/* hero*/
+/*#hero {*/
+/*background: url('../img/cat.jpg') 50% 0 repeat fixed;*/
+/*opacity: 0.5;*/
+/*min-height: 500px;*/
+/*position: relative;*/
+/*display: table;*/
+/*width: 100%;*/
+/*padding: 40px 0;*/
+/*color: white;*/
+/*-webkit-font-smoothing: antialiased;*/
+/*text-rendering: optimizelegibility;*/
+/*}*/
+/*div #hero {*/
+/*width:100%;*/
+/*}*/
+
+.hero-text {
+  /*margin-top: 50px;*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  text-align: center;
+}
+.footer-box {
+  margin: 10px;
+  float: left;
+  width: 20%;
+
+}
+.text-center {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.un-order-list {
+  list-style-type:none;
+}
+.container{
+  width:100%;
+  padding-left:0;
+  padding-right:0;
+}
+
+.container-fluid{
+  width:70%;
+  padding-left:0;
+  padding-right:0;
+}
+
+.clearfix:after {
+  content:"";
+  display: table;
+  clear:both;
+}
+
+/*---new---*/
+
+section {
+  background: white;
+}
+section.whiteband {
+  background: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+section.greyband {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+/*div.row {*/
+  /*border: 1px solid darkgrey;*/
+  /*background: white;*/
+  /*-webkit-border-radius: 5px;*/
+  /*-moz-border-radius: 5px;*/
+  /*-ms-border-radius: 5px;*/
+  /*border-radius: 5px;*/
+/*}*/
+div.row#middleinstruction {
+  background: lightgrey;
+}
+div #formsection {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div #middleinstruction, #formsection {
+  padding: 10px;
+}
+
+div #middleinstruction{
+  border: none;
+}
+div #middleinstruction p{
+  margin: 0;
+}
+div #searchlist {
+  padding: 0;
+}
+div.sitterinfo {
+  padding: 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+.feature-image {
+  width: 100%;
+
+}
+
+.feature-image-default-alt {
+  /*background: url('../img/cat.jpg') 50% 0 repeat fixed;*/
+  /*background-size: cover;*/
+
+  background: url('../img/cat.jpg') no-repeat;
+  min-height: 500px;
+  position: relative;
+  /*display: table;*/
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: white;
+}
+
+div.sitterwords {
+  box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 10px;
+}
+
+div.sitterwords > img {
+  float: left;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.row-centered {
+  text-align:center;
+
+}
+div #sitterexample, #sitterwordexample, #steps {
+  border: none;
+}
+
+div #sitterwordexample {
+  background: inherit;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+.figcap {
+  margin-top: 1em;
+}
+
+div.circle {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius:20px;
+  border-radius:20px;
+  text-align: center;
+  line-height: 40px;
+  display: table;
+  float: left;
+}
+div.circle i {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+div #first {
+  background-color: limegreen;
+}
+div #second {
+  background-color: indianred;
+}
+div #last {
+  background-color: deepskyblue;
+}
+div.circletitle h1 {
+  margin-top: 0;
+  margin-left: 50px;
+}
+div.navcontainer {
+  padding:0 20px 0px 20px;
 }

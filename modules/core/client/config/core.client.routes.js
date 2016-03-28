@@ -24,6 +24,10 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
     // Home state routing
     $stateProvider
+      .state('searchpg', {
+        url: '/searchpg',
+        templateUrl: 'modules/core/client/views/searchpg.client.view.html'
+      })
       .state('home', {
         url: '/',
         templateUrl: 'modules/core/client/views/home.client.view.html'

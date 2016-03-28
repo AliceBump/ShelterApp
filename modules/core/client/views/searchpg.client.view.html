@@ -1,0 +1,146 @@
+<section data-ng-controller="SearchpgController">
+  <div class="container-fluid">
+    <div class="row" id="formsection">
+      <div class="col-sm-10 col-sm-offset-1" id="searchsection">
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">Service Type</span>
+            <select name="serviceType" id="serviceType" ng-model="sitter.serviceType" class="form-control">
+              <option value="Dog Boarding">Dog Boarding</option>
+              <option value="House Sitting">House Sitting</option>
+              <option value="Dog Walking">Dog Walking</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location"ng-model="sitter.location" class="form-control">
+            </input>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" name="startDate"ng-model="sitter.startDate" class="form-control">
+            </input>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" name="endDate"ng-model="sitter.endDate" class="form-control">
+            </input>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class=""input-group-addon">Dog Size</span>
+            <select name="dogSize" id="dogSize" ng-model="sitter.dogSize" class="form-control">
+              <option value="small">Small 0-15lbs</option>
+              <option value="medium">Medium 16-40lbs</option>
+              <option value="large">Large 41+lbs</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class=""input-group-addon">Dog Number</span>
+            <select name="dogNumber" id="dogNumber" ng-model="sitter.dogNumber" class="form-control">
+              <option value="1">One Dog</option>
+              <option value="2">Two Dogs</option>
+              <option value="3">Three+ Dogs</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
+          <div class="form-group">
+            <button  type="submit" ng-disabled="addEventForm.$invalid" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="middleinstruction">
+      <div class="col-sm-10 col-sm-offset-1">
+        <p>
+          Book on Bark and receive premium insurance, world-class customer support, and our reservation guarantee.<span class="learnmore">
+          Learn More"</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7" id="searchlist">
+        <div class="sitterinfo clearfix" ng-repeat="sitter in sitters">
+          <div class="thumnail">
+            <img class="thumnailimg" ng-src="/modules/core/client/img/sitters/{{sitter.image}}.jpg" alt="">
+            <div class="caption">
+              <h3>{{sitter.name}}</h3>
+              <p><strong>{{sitter.description}}</strong></p>
+              <p><strong>{{sitter.location}}</strong></p>
+              <p><strong>{{sitter.price | currency}}</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" id="map">
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" >
+  <!--class="navbar navbar-inverse navbar-fixed-bottom"-->
+  <div>
+    <div class="footer-box">
+      <p>Learn More</p>
+
+      <ul class="un-order-list">
+        <li><a href=" ">Read Our Blog</a></li>
+        <li><a href=" ">Rover Q&amp;A</a></li>
+        <li><a href=" ">Community</a></li>
+        <li><a href=" ">Rover Store</a></li>
+        <li><a href=" ">Premium Insurance</a></li>
+        <li><a href=" ">Safety</a></li>
+        <li><a href=" ">Sit a Dog, Save a Life</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <p>Need Help?</p>
+      <a href="" title="">Help Center</a>
+    </div>
+    <div class="footer-box">
+      <p >About Rover</p>
+      <ul class="un-order-list">
+        <li><a href=" ">About Us</a></li>
+        <li><a href=" ">Get the app</a></li>
+        <li><a href=" ">In the Press</a></li>
+        <li><a href=" ">RoverCam</a></li>
+        <li><a href=" ">Jobs</a></li>
+        <li><a href=" ">Partners</a></li>
+        <li><a href=" ">Privacy Policy</a></li>
+        <li><a href=" ">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-box">
+    <p>Top Rover Cities</p>
+    <ul class="un-order-list">
+      <!-- need more cities to be displayed here-->
+      <li><a href=" ">Amherst</a></li>
+      <li><a href=" ">Boston</a></li>
+      <li><a href=" ">Chicago</a></li>
+      <li><a href=" ">Detroit</a></li>
+      <li><a href=" ">San Jose</a></li>
+    </ul>
+  </div>
+
+</footer>

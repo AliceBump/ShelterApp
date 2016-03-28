@@ -1,0 +1,27 @@
+[
+  {
+    "id":1,
+    "name": "Rid",
+    "location": "95131",
+    "service": "Dog Boarding, House Sitting",
+    "time": "2016/10/1",
+    "dogsize": "small",
+    "dognumber": "1, 2",
+    "image": "sitter1",
+    "description": "A loving home for your dog.",
+    "price": "40"
+  },
+  {
+    "id":2,
+    "name": "Kate",
+    "location": "95151",
+    "service": "Dog Boarding, House Sitting, Dog Walking",
+    "time": "2016/5/1",
+    "dogsize": "small, large",
+    "dognumber": "2",
+    "image": "sitter2",
+    "description": "We'll do everything you and your dog need.",
+    "price": "50"
+  }
+
+]
