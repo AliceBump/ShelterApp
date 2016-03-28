@@ -10,7 +10,14 @@ module.exports = {
   // Binding to 127.0.0.1 is safer in production.
   host: process.env.HOST || '0.0.0.0',
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://ShelterUser:ShelterPass@jello.modulusmongo.net:27017/yjuM7aze' },
+    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://ShelterUser:ShelterPass@jello.modulusmongo.net:27017/yjuM7aze',
+    options: {
+      user: '',
+      pass: ''
+    },
+    // Enable mongoose debug mode
+    debug: process.env.MONGODB_DEBUG || false
+  },
   log: {
     // logging with Morgan - https://github.com/expressjs/morgan
     // Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
