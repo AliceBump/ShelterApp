@@ -306,7 +306,7 @@ div.sitterinfo {
   /*background: url('../img/cat.jpg') 50% 0 repeat fixed;*/
   /*background-size: cover;*/
 
-  background: url('../img/hero-bg.jpg') 50% 0 no-repeat;
+  background: url('/modules/core/client/img/hero-bg.jpg') 50% 0 no-repeat;
   min-height: 500px;
   background-size:cover;
   position: relative;
