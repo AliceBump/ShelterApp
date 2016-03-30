@@ -8,8 +8,8 @@
       <div class="clearfix">
 
         <div class="col-sm-6 col-sm-offset-3 hero-text">
-          <h1>Happy dog, our proud.</h1>
-          <p class="lead">Now sign up for a $10 off </p>
+          <h1>Sheltopia</h1>
+          <p class="lead">Home for cats and cat lovers.</p>
           <p><a class="btn btn-lg btn-danger" ui-sref="authentication.signup" role="button">Sign up now &raquo;</a></p>
         </div>
         <!-- col -->
@@ -19,85 +19,36 @@
       <!-- container -->
     </article>
   </section>
-  <section ng-controller="HomeController" class="greyband">
+  <section class="whitebg">
     <div class="container-fluid">
-      <div class="row" id="formsection">
-        <h1 class="text-center">Find your sitters now.</h1>
-        <div class="col-sm-10 col-sm-offset-1" id="searchsection">
-          <div class="col-sm-3">
-            <div class="input-group">
-              <span class="input-group-addon">Service Type</span>
-              <select name="serviceType" id="serviceType" ng-model="sitter.serviceType" class="form-control">
-                <option value="Dog Boarding">Dog Boarding</option>
-                <option value="House Sitting">House Sitting</option>
-                <option value="Dog Walking">Dog Walking</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="input-group">
-              <label for="location">Location</label>
-              <input type="text" id="location" name="location"ng-model="sitter.location" class="form-control">
-              </input>
-            </div>
-          </div>
+      <div class="section-header">
+        <h2>What Sheltopia is and how we work.</h2>
+      </div><!-- section-header -->
 
-          <div class="col-sm-3">
-            <div class="input-group">
-              <label for="startDate">Start Date</label>
-              <input type="date" id="startDate" name="startDate"ng-model="sitter.startDate" class="form-control">
-              </input>
-            </div>
-          </div>
+      <p class="lead">We&rsquo;re a group of people who dedicate to help homeless cats with a lovely home and share our stories with them.</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Manage our cat residents</h3>
+          <p>So you can log in with your personal accounts and add new residents to Sheltopia and register their basic information. You can also update the information until cats find permanent home.</p>
+        </div><!-- end col -->
 
-          <div class="col-sm-3">
-            <div class="input-group">
-              <label for="endDate">End Date</label>
-              <input type="date" id="endDate" name="endDate"ng-model="sitter.endDate" class="form-control">
-              </input>
-            </div>
-          </div>
+        <div class="col-sm-6">
+          <h3>Share stories</h3>
+          <p>You can log in to publish new stories with cats and see other stories from other cat lovers.</p>
+        </div><!-- end col -->
+      </div><!-- row -->
 
-          <div class="col-sm-3">
-            <div class="input-group">
-              <span class=""input-group-addon">Dog Size</span>
-              <select name="dogSize" id="dogSize" ng-model="sitter.dogSize" class="form-control">
-                <option value="small">Small 0-15lbs</option>
-                <option value="medium">Medium 16-40lbs</option>
-                <option value="large">Large 41+lbs</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="input-group">
-              <span class=""input-group-addon">Dog Number</span>
-              <select name="dogNumber" id="dogNumber" ng-model="sitter.dogNumber" class="form-control">
-                <option value="1">One Dog</option>
-                <option value="2">Two Dogs</option>
-                <option value="3">Three+ Dogs</option>
-              </select>
-            </div>
-          </div>
-          <hr />
-          <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
-            <div class="form-group">
-              <button  type="submit" ng-disabled="addEventForm.$invalid" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn btn-primary">Reset</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div><!-- container -->
   </section>
-  <section class="whiteband">
+
+  <section class="greybg">
     <div class="container ">
       <h1 class="text-center">
-        Find dog lovers around you,also kind sitters.
+        Happy Residents
       </h1>
       <p class="text-center">
-        Bark dogs enjoy loving, local stays.
+        Some of our happily cat residents in Sheltopia.
       </p>
       <div class="row row-centered" id="sitterexample">
         <div class="col-sm-2 col-centered sittersexample">
@@ -119,9 +70,9 @@
       </div>
     </div>
   </section>
-  <section class="greyband">
+  <section class="whiterbg">
     <h1 class="text-center">
-      Barkers will treat your dog as family..
+      Find their Owner
     </h1>
     <div class="row row-centered" id="sitterwordexample">
       <div class="col-sm-5 col-centered clearfix sitterwords">
@@ -138,32 +89,13 @@
       </div>
     </div>
   </section>
-  <section class="whiteband">
+  <section class="greybg">
     <h1 class="text-center">
-      How does Bark work?
+      How does Sheltopia work?
     </h1>
     <p class="text-center">
       Only 3 steps to do.
     </p>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="assets/img/icon-design.png" alt="Design">
-        <h3>Sexy &amp; Modern Design</h3>
-        <p>You get to work with a modern, professional quality design &amp; layout.</p>
-      </div><!-- col -->
-      <div class="col-sm-4">
-        <img src="assets/img/icon-code.png" alt="Code">
-        <h3>Quality HTML5 &amp; CSS3</h3>
-        <p>You'll learn how hand-craft a stunning website with valid, semantic and beautiful HTML5 &amp; CSS3.</p>
-      </div><!-- col -->
-      <div class="col-sm-4">
-        <img src="assets/img/icon-cms.png" alt="CMS">
-        <h3>Easy-to-use CMS</h3>
-        <p>Allow your clients to easily update their websites by converting your static websites to dynamic websites, using WordPress.</p>
-      </div><!-- col -->
-
-    </div>
 
     <div class="row row-centered text-center" id="steps">
       <div class="col-sm-3 col-centered">

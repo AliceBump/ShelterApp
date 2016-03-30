@@ -546,7 +546,21 @@ Blue Gray:  #3e4249
 /*}*/
 
 /* ==== BLOG ==== */
+.blog-feature-image {
+  display: table;
+  width: 100%;
+  min-height: 300px;
+  background: url('img/blog-bg.jpg') no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
 
+.page-title {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
 .post, .widget, #comments {
   position: relative;
   border: solid 1px #ddd;

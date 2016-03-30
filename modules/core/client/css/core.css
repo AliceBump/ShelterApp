@@ -306,8 +306,9 @@ div.sitterinfo {
   /*background: url('../img/cat.jpg') 50% 0 repeat fixed;*/
   /*background-size: cover;*/
 
-  background: url('../img/cat.jpg') no-repeat;
+  background: url('../img/hero-bg.jpg') 50% 0 no-repeat;
   min-height: 500px;
+  background-size:cover;
   position: relative;
   /*display: table;*/
   width: 100%;
@@ -316,6 +317,22 @@ div.sitterinfo {
   color: white;
 }
 
+.section-header {
+  text-align: center;
+}
+
+.whitebg {
+  background-color: white;
+  /*padding-top: 30px;*/
+  /*padding-bottom:30px;*/
+  padding: 40px 0 40px 0;
+}
+.greybg {
+  background-color: lightgrey;
+  /*padding-top: 30px;*/
+  /*margin-bottom:30px;*/
+  padding: 40px 0 40px 0;
+}
 div.sitterwords {
   box-shadow:  2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
